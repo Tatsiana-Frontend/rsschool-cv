@@ -33,9 +33,9 @@ class SmallestIntegerFinder {
 ```
 ## My work experience
 #### My study projects:
-[ACTIVELIVE](https://tatsiana-frontend.github.io/ACTIVELIVE/)
-[Myportfolio](tatsiana-frontend.github.io/Myportfolio/)
-[Lab](tatsiana-frontend.github.io/lab/)
+[ACTIVELIVE](https://tatsiana-frontend.github.io/ACTIVELIVE/)  
+[Myportfolio](tatsiana-frontend.github.io/Myportfolio/)  
+[Lab](tatsiana-frontend.github.io/lab/)  
 
 ## My education
 BNTU - Faculty of Management Technologies and Humanization, 2002-2007
