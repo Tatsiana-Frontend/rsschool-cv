@@ -7,18 +7,19 @@ html {
 }
 
 @font-face {
-  font-family: 'Poppins', sans-serif;
-  src: url("assets/fonts/Poppins-Bold.ttf");
+  font-family: 'Poppins';
+  src: url("./assets/fonts/Poppins-Bold.ttf");
   font-weight: 700;
 }
 
 @font-face {
-  font-family: 'Poppins', sans-serif;
-  src: url("assets/fonts/Poppins-Medium.ttf");
+  font-family: 'Poppins';
+  src: url("./assets/fonts/Poppins-Medium.ttf");
   font-weight: 500;
 }
 
 body {
+  font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -27,7 +28,7 @@ body {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -75,5 +76,198 @@ body {
 .nav-link:hover:after,
 .nav-link:focus:after {
   width: 100%;
+}
+
+.main {
+  background:  url(assets/img/background.webp) repeat #E4E5E2;;
+}
+
+.profile {
+  padding: 20px 0;
+  background-color: #333E50;
+  border-top: 1px solid rgba(158, 136, 89, 0.17);
+}
+
+.profile__logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.profile__title {
+  text-align: center;
+  color: #E4E5E2;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.profile__prof {
+  position: relative;
+  text-align: center;
+  color: #9E8859;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.profile__prof:before {
+  position: absolute;
+  top: 50%;
+  left: 75px;
+  content: "";
+  width: 300px;
+  height: 1px;
+  background-color: #9E8859;
+}
+
+.profile__prof:after {
+  position: absolute;
+  top: 50%;
+  right: 75px;
+  content: "";
+  width: 300px;
+  height: 1px;
+  background-color: #9E8859;
+}
+
+.contacts {
+  background-color: #333E50;
+  padding: 15px 0 25px 0;
+}
+
+.contacts__list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  list-style: none;
+}
+
+.contacts__img {
+  display: block;
+  margin: 0 auto;
+}
+
+.contacts__text {
+  margin-top: 10px;
+  color: #E4E5E2;
+  font-weight: 500;
+  font-size: 11px;
+}
+
+.about {
+  padding: 30px 0;
+}
+
+.about__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__img {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: url(assets/img/t-artuganova.jpg);
+  margin-right: 20px;
+}
+
+.about__text {
+  max-width: 1060px;
+  color: #555555;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.wrap {
+  padding: 20px 0;
+}
+
+.inner_left {
+  width: 30%;
+}
+
+.skills__title,
+.education__title {
+  position: relative;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #333E50;
+  line-height: 3;
+}
+
+.skills__title:after,
+.education__title:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 25%;
+  width: 50%;
+  height: 2px;
+  background-color: #333E50;
+}
+
+.skills__list {
+  list-style: none;
+  padding-left: 15px;
+  margin-top: 25px;
+}
+
+.skills__list-item {
+  position: relative;
+  font-weight: 500;
+  font-size: 13px;
+  color: #555555;
+  line-height: 2;
+}
+
+.skills__list-item:before {
+  position: absolute;
+  top: 9px;
+  left: -14px;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #9E8859;
+}
+
+.skills__list_hard {
+  position: relative;
+}
+
+.skills__list_hard:after {
+  position: absolute;
+    left: 33%;
+    bottom: -8px;
+    content: "";
+    width: 30%;
+    height: 1px;
+    background-color: #333E50;
+}
+
+.education__item {
+  margin-top: 20px;
+}
+
+.education__caption,
+.education__year {
+  font-weight: 500;
+  font-size: 13px;
+  color: #555555;
+}
+
+.education__university {
+  font-weight: 500;
+  font-size: 13px;
+  color: #9E8859;
+  margin-top: 7px;
+}
+
+.education__year {
+  margin-top: 7px;
 }
 
