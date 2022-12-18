@@ -19,12 +19,14 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 13px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  background-color: #333E50;
   margin: 0;
   padding: 0;
 }
