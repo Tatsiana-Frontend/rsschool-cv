@@ -20,6 +20,8 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -79,7 +81,7 @@ body {
 }
 
 .main {
-  background:  url(assets/img/background.webp) repeat #E4E5E2;;
+  background:  url(assets/img/background.webp) center center/cover no-repeat #E4E5E2;;
 }
 
 .profile {
@@ -95,8 +97,8 @@ body {
 
 .profile__title {
   text-align: center;
-  color: #E4E5E2;
   font-weight: 500;
+  color: #E4E5E2;
   font-size: 30px;
 }
 
@@ -160,6 +162,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 40px;
 }
 
 .about__img {
@@ -172,9 +175,8 @@ body {
 }
 
 .about__text {
-  max-width: 1060px;
+  max-width: 970px;
   color: #555555;
-  font-weight: 500;
   font-size: 14px;
   line-height: 1.8;
 }
@@ -183,12 +185,29 @@ body {
   padding: 20px 0;
 }
 
+.wrap .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner {
+  padding: 0 40px;
+}
+
 .inner_left {
-  width: 30%;
+  width: 50%;
+}
+
+.skills__wrap {
+  display: flex;
+  justify-content: space-between;
 }
 
 .skills__title,
-.education__title {
+.education__title,
+.projects__title,
+.code__title,
+.english__title {
   position: relative;
   text-align: center;
   font-weight: 700;
@@ -200,7 +219,10 @@ body {
 }
 
 .skills__title:after,
-.education__title:after {
+.education__title:after,
+.projects__title:after,
+.code__title:after,
+.english__title:after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -210,13 +232,15 @@ body {
   background-color: #333E50;
 }
 
-.skills__list {
+.skills__list,
+.projects__list {
   list-style: none;
   padding-left: 15px;
   margin-top: 25px;
 }
 
-.skills__list-item {
+.skills__list-item,
+.projects__list-item {
   position: relative;
   font-weight: 500;
   font-size: 13px;
@@ -224,7 +248,8 @@ body {
   line-height: 2;
 }
 
-.skills__list-item:before {
+.skills__list-item:before,
+.projects__list-item:before {
   position: absolute;
   top: 9px;
   left: -14px;
@@ -235,34 +260,16 @@ body {
   background-color: #9E8859;
 }
 
-.skills__list_hard {
-  position: relative;
-}
-
-.skills__list_hard:after {
-  position: absolute;
-    left: 33%;
-    bottom: -8px;
-    content: "";
-    width: 30%;
-    height: 1px;
-    background-color: #333E50;
-}
-
 .education__item {
   margin-top: 20px;
 }
 
 .education__caption,
 .education__year {
-  font-weight: 500;
-  font-size: 13px;
   color: #555555;
 }
 
 .education__university {
-  font-weight: 500;
-  font-size: 13px;
   color: #9E8859;
   margin-top: 7px;
 }
@@ -271,3 +278,81 @@ body {
   margin-top: 7px;
 }
 
+.inner_right {
+  width: 50%;
+}
+
+.projects__list {
+  list-style: none;
+}
+
+.projects__link {
+  font-weight: 500;
+  font-size: 13px;
+  color: #555555;
+  line-height: 2;
+
+}
+
+.projects__link:hover {
+  color: #909090;
+  transition: all 0.5s ease;
+}
+
+.code__descr {
+  margin-top: 30px;
+}
+
+.code__subtitle {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333E50;
+}
+
+.code__text p {
+  color: #555555;
+}
+
+.code__solution {
+  margin-top: 22px;
+}
+
+.solution__subtitle {
+  margin-bottom: 0;
+}
+
+.code__solution pre {
+  margin-top: 0;
+}
+
+.code__solution code {
+  color: #555555;
+}
+
+.english__text {
+  margin-top: 20px;
+  color: #555555;
+}
+
+.footer {
+  padding: 60px 0;
+}
+
+.footer__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__year {
+  color: #E4E5E2;
+}
+
+.footer__link {
+  font-weight: 500;
+  font-size: 13px;
+  color: #E4E5E2;
+}
+
+.footer__link:hover {
+  color: #b6b6b6;
+}
