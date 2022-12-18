@@ -1,4 +1,4 @@
-![tatsyana-artuganova](img/t-artuganova.jpg)
+![tatsyana-artuganova](assets/img/t-artuganova.jpg)
 # Tatsiana Artuganova
 ---
 ## My contacts
